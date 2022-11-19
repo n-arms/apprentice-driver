@@ -5,7 +5,8 @@
   "main": "src/main.ts",
   "scripts": {
     "test": "./node_modules/.bin/tsc --noEmit",
-    "build": "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/esbuild src/*.ts --bundle --sourcemap --minify --outfile='dist/main.js'"
+    "build": "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/esbuild src/main.ts --bundle --sourcemap --minify --outdir='dist'",
+    "launch": "npm run build && python3 -m http.server"
   },
   "repository": {
     "type": "git",
