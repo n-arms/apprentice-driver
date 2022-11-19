@@ -1,0 +1,28 @@
+{
+  "name": "apprentice-driver",
+  "version": "0.0.0",
+  "description": "A robot simulator to help train rookie drivers for FRC competitions",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "./node_modules/.bin/tsc --noEmit",
+    "build": "./node_modules/.bin/tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n-arms/apprentice-driver.git"
+  },
+  "keywords": [
+    "FRC",
+    "robot",
+    "simulator"
+  ],
+  "author": "n-arms",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/n-arms/apprentice-driver/issues"
+  },
+  "homepage": "https://github.com/n-arms/apprentice-driver#readme",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
