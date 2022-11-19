@@ -4,7 +4,7 @@
   "description": "A robot simulator to help train rookie drivers for FRC competitions",
   "main": "src/main.ts",
   "scripts": {
-    "test": "./node_modules/.bin/tsc --noEmit",
+    "check": "./node_modules/.bin/tsc --noEmit",
     "build": "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/esbuild src/main.ts --bundle --sourcemap --minify --outdir='dist'",
     "launch": "npm run build && python3 -m http.server"
   },

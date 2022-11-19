@@ -1,0 +1,9 @@
+#page-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#code-panel {
+    display: flex;
+    flex-direction: column;
+}
