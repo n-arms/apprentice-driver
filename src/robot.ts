@@ -27,8 +27,7 @@ export class Robot {
         const wheelCircumference = Math.PI * this.wheelRadius * 2;
         const speed = wheelCircumference * (left + right) / 2;
 
-        const turningCircumference = Math.PI * this.turningRadius * 2;
-        const angularVelocity = this.turningRadius * (left - right) / this.wheelRadius;
+        const angularVelocity = this.wheelRadius * (left - right) / this.turningRadius;
 
         return { speed, angularVelocity };
     }

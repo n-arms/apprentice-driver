@@ -1,15 +1,16 @@
 import { Point } from "./point.js"
+import { Robot } from "./robot.js"
 
 interface Controller {
     left: () => number;
     right: () => number;
 }
 
-class FixedController {
+export class FixedController {
     leftConstant: number;
     rightConstant: number;
 
-    constructor(left, right) {
+    constructor(left: number, right: number) {
         this.leftConstant = left;
         this.rightConstant = right;
     }
