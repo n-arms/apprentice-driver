@@ -5,7 +5,7 @@
   "main": "src/main.ts",
   "scripts": {
     "test": "./node_modules/.bin/tsc --noEmit",
-    "build": "./node_modules/.bin/tsc"
+    "build": "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/esbuild src/*.ts --bundle --sourcemap --minify --outfile='dist/main.js'"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "homepage": "https://github.com/n-arms/apprentice-driver#readme",
   "devDependencies": {
     "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "esbuild": "^0.15.14"
   }
 }
